@@ -46,3 +46,10 @@ java -cp "out;asm-9.x.jar;asm-tree-9.x.jar" PatchAsh <原jar> <输出jar>
 | 许可 | MIT（可自由使用与修改） |
 
 `PatchAsh.java` 会修改第三方模组的字节码。这类修改可能违反目标模组的使用条款，**请在动手前确认你拥有相应权利**；作者不对由此产生的后果负责。
+
+## 依赖关系
+
+无运行时依赖，也不被其他模组依赖。工具对使用者提供的文件独立工作：
+
+- `PatchAsh.java` 需要目标 jar 与 ASM 库
+- `tools/` 下的脚本需要 Python 3 + Pillow
